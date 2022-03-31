@@ -8,10 +8,33 @@ const cognomi_invitati = ['Enache', 'Pestilli', 'Bivol', 'Giolitto', 'Cit',];
 
 const nomi_invitati = ['Victor', 'Catiuscia', 'Nadia', 'Ginevra', 'Angelo'];
 
-let cognomi_mischiati = [];
+let random = [] 
+
+let nome_cognome;
+
+while (random.length <= 5 && random.length < (nomi_invitati.length * cognomi_invitati.length)){
+    let nome_random = nomi_invitati[Math.floor(Math.random() * nomi_invitati.length)] 
+    let cognome_random = cognomi_invitati[Math.floor(Math.random() * cognomi_invitati.length)] 
+
+    nome_cognome = nome_random + ' ' + cognome_random;
+
+    if(!random.includes(nome_cognome)){
+        random.push(nome_cognome)
+    }
+}
+
+console.log(random)
 
 
-let cognome_random;
+
+
+
+
+
+/* let cognomi_mischiati = []; */
+
+
+/* let cognome_random;
 
 let nome_random;
 
@@ -32,13 +55,13 @@ while(i <= 5){
         }
 
     }
+     
 
     if(bool){
         cognomi_mischiati.push(cognome_random)
     }
 
-    i++
-
+    i += cognomi_mischiati.length
 
         
 } 
@@ -46,7 +69,7 @@ while(i <= 5){
     console.log(cognomi_mischiati)
  
 
-
+ */
 
 
 /* numero_cognome_random = Math.floor(Math.random() * nomi_invitati.length)
