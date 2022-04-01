@@ -29,7 +29,7 @@ else if (elenco_2.length < elenco_1.length) {
 }
 
 else{
-    console.log("i avevavo fin dall'inizio lostesso numero di elementi")
+    console.log("avevavo fin dall'inizio lostesso numero di elementi")
 }
 
 
